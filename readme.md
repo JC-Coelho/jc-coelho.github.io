@@ -39,6 +39,3 @@ Use these four files as your starting point:
 
 Happy learning!
 
-
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/3ec0228d-0460-4788-bc90-7c1d5b859cea/deploy-status)](https://app.netlify.com/sites/borges-coelho/deploys)

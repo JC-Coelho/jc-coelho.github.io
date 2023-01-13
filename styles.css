@@ -1,0 +1,245 @@
+/*
+COLOR PALETTE
+https://color.adobe.com/mythemes
+https://www.w3schools.com/colors/colors_picker.asp
+https://colours.neilorangepeel.com/
+https://coolors.co/88ff4d-80ffed-ffbb59-621eB3-c0c0c0
+
+#F7FFF7 - almost white
+#343434 - dark gray - almost black
+
+#FF4DFB - Magenta
+#88FF4D - Green (Spring Frost)
+#56B327 - Dark Green
+#80FFED - Cyan (Turquoise Blue)
+#4553FF - Dark Blue
+#FFBB59 - Orange (Yellow Orange)
+#7A9983 - Dark Grey
+#621EB3 - Purple
+#9945FF - Light Purple
+#c0c0c0 - Silver
+#FFFFFF - White (Additive)
+#000000 - Black
+
+*/
+
+/* Global styles
+------------------------------------*/
+
+:root {
+  --nav-height: 50px; /*You HAVE To Give A Default Fallback Value*/
+
+  --w-magenta: #FF4DFB;
+  --w-green: #88FF4D;
+  --w-dark-green: #56B327;
+  --w-cyan: #80FFED;
+  --w-dark-blue: #4553FF;
+  --w-orange: #FFBB59;
+  --w-purple: #621EB3;
+  --w-light-purple: #9945FF;
+
+  --w-dark-grey: #7A9983;
+
+  /* Greys */
+  --w-grey-one: #464C45;
+  --w-grey-two: #2F332E;
+  --w-grey-three: #33302E;
+
+  --mono-grey-four: #404040;
+  --mono-grey-three: #808080;
+  --mono-grey-two: #BFBFBF;
+  --mono-grey-one: #E6E6E6;
+
+  --w-light-grey: #D4E5D1;
+  --w-medium-grey: #8D998B;
+
+}
+
+html {
+  box-sizing: border-box;
+  scroll-padding-top: 100vh - var(--nav-height); /* height of sticky header */
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Style the body */
+body {
+  font-family: 'Lucida Grande', Geneva, Tahoma, Verdana, sans-serif;
+  /* 'Assistant' */
+  margin: 0;
+  padding-top: 0;
+  /*
+  font-size:
+  line-height:
+  */
+}
+
+/* Header/logo Title */
+.header {
+  padding: 25px;
+  text-align: center;
+
+	background: #7f89ff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #7f89ff 1%, #202240 99%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#7f89ff), color-stop(99%,#202240)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #7f89ff 1%,#202240 99%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #7f89ff 1%,#202240 99%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #7f89ff 1%,#202240 99%); /* IE10+ */
+	background: linear-gradient(to bottom,  #7f89ff 1%,#202240 99%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7f89ff', endColorstr='#202240',GradientType=0 ); /* IE6-9 */
+
+  background: linear-gradient(to bottom, #7f89ff 1%, #202240 99%); /* Standard syntax (must be last) */
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+
+.navbar {
+  overflow: hidden;
+  background-color: black;
+  width: 100%;
+  top: 0;
+  position: sticky;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  /* transition: width 0.2s ease-out; */
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: var(--mono-grey-three);
+  color: black;
+}
+
+section {
+  scroll-margin-top:  5rem;
+}
+
+/* Column container */
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+
+  background-color: var(--mono-grey-one);
+  padding: 25px;
+}
+
+/* Main column */
+.main {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+  min-height: 65vh;
+
+  background-color: white;
+  padding: 25px;
+}
+
+ul {
+  list-style-type: square;
+  /* list-style-image: url(example.png);   */
+  list-style-position: outside;
+}
+
+
+/* Image placeholder */
+.img-wide {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  min-height: 50vh;
+  background-color: var(--mono-grey-three);
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  min-height: 60vh;
+  padding: 25px;
+  text-align: center;
+  justify-content: center;
+  align-items: flex-end;
+  background: var(--w-green);
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+svg {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+/*
+.navbar {
+    animation: slide 0.2s ease-in-out;
+
+    @keyframes slide {
+      from {
+        --nav-height: -50px;
+      }
+      to {
+        top: 0px;
+      }
+    }
+}
+*/
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}

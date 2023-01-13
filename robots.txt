@@ -1,0 +1,6 @@
+user-agent: *
+Disallow: /*.js$
+Disallow: /*.css$
+Disallow: /content/
+Disallow: /images/
+sitemap: https://jc-coelho.net/sitemap.xml

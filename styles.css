@@ -77,7 +77,8 @@ body {
 
 /* Header/logo Title */
 .header {
-  padding: 25px;
+  padding: 1px 1px 0px 1px;
+  
   text-align: center;
 
 	background: #7f89ff; /* Old browsers */

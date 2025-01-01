@@ -77,21 +77,23 @@ body {
 
 /* Header/logo Title */
 .header {
-  padding: 1px 1px 0px 1px;
-  
+
+  /* padding: 5px 5px 5px 5px; /* This causes a 1-pixel gap (bottom) in the sticky navbar */
   text-align: center;
 
-	background: #7f89ff; /* Old browsers */
-	background: -moz-linear-gradient(top,  #7f89ff 1%, #202240 99%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#7f89ff), color-stop(99%,#202240)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #7f89ff 1%,#202240 99%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #7f89ff 1%,#202240 99%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #7f89ff 1%,#202240 99%); /* IE10+ */
-	background: linear-gradient(to bottom,  #7f89ff 1%,#202240 99%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7f89ff', endColorstr='#202240',GradientType=0 ); /* IE6-9 */
+  /*background: #7f89ff; /* Old browsers */
+	/*background-image: -moz-linear-gradient(top,  #7f89ff 1%, #202240 99%); /* FF3.6+ */
+	/*background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#7f89ff), color-stop(99%,#202240)); /* Chrome,Safari4+ */
+	/*background-image: -webkit-linear-gradient(top,  #7f89ff 1%,#202240 99%); /* Chrome10+,Safari5.1+ */
+	/*background-image: -o-linear-gradient(top,  #7f89ff 1%,#202240 99%); /* Opera 11.10+ */
+	/*background-image: -ms-linear-gradient(top,  #7f89ff 1%,#202240 99%); /* IE10+ */
+	/*background-image: linear-gradient(to bottom,  #7f89ff 1%,#202240 99%); /* W3C */
+	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7f89ff', endColorstr='#202240',GradientType=0 ); /* IE6-9 */
 
-  background: linear-gradient(to bottom, #7f89ff 1%, #202240 99%); /* Standard syntax (must be last) */
-  color: white;
+  /*background-image: linear-gradient(to bottom, #7f89ff 1%, #202240 99%); /* Standard syntax (must be last) */
+  /*color: white; */
+
+  color: black;
 }
 
 /* Increase the font size of the heading */

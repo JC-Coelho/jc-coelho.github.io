@@ -93,7 +93,7 @@ body {
   /*background-image: linear-gradient(to bottom, #7f89ff 1%, #202240 99%); /* Standard syntax (must be last) */
   /*color: white; */
 
-  color: var(--w-dark-grey);
+  color: var(--mono-grey-three);
 }
 
 /* Increase the font size of the heading */
